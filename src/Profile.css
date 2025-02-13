@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.profile-container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #98c1d9; /* Light blue background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    min-height: 100vh;
+}
+
+.bubble-title {
+    background-color: #98c1d9;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #f9fafa;
+    text-shadow: 0 0 10px rgba(135, 206, 235, 0.5),
+                 0 0 20px rgba(135, 206, 235, 0.3);
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin: 20px 0;
+  }

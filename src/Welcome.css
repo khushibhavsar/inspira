@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Make the container take up the full screen */
+.welcome-container {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #98c1d9; /* Light blue background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #000033, #000066);
+    overflow: hidden;
+  }
+  
+
+  
+  /* Style for the subtitle */
+  .bubble-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin: 20px 0;
+  }
+
+  /* Make the Welcome text slightly larger */
+h1.bubble-title {
+    font-size: 3.5rem;
+  }
+  
+  /* Only animate elements with both bubble-title and animated classes */
+  .bubble-title.animated {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+
+/* Stars background */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #98c1d9 url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICA8ZyBmaWxsPSIjRkZGIj4NCiAgICA8Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxIi8+DQogICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMSIvPg0KICAgIDxjaXJjbGUgY3g9IjkwIiBjeT0iMzAiIHI9IjEiLz4NCiAgICA8Y2lyY2xlIGN4PSIxMzAiIGN5PSI3MCIgcj0iMSIvPg0KICAgIDxjaXJjbGUgY3g9IjE3MCIgY3k9IjQwIiByPSIxIi8+DQogIDwvZz4NCjwvc3ZnPg==');
+  }
+  
+  .twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    animation: twinkle 4s linear infinite;
+    background: transparent url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwMCAyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICA8ZyBmaWxsPSIjRkZGIiBmaWxsLW9wYWNpdHk9IjAuNSI+DQogICAgPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMSIvPg0KICAgIDxjaXJjbGUgY3g9IjcwIiBjeT0iNzAiIHI9IjEiLz4NCiAgICA8Y2lyY2xlIGN4PSIxMTAiIGN5PSI1MCIgcj0iMSIvPg0KICAgIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjkwIiByPSIxIi8+DQogICAgPGNpcmNsZSBjeD0iMTkwIiBjeT0iNjAiIHI9IjEiLz4NCiAgPC9nPg0KPC9zdmc+');
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes twinkle {
+    from {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Ensure the content is centered vertically */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 3;
+  }
+  
+  /* Optional: Add text glow effect */
+  .bubble-title {
+    text-shadow: 0 0 10px rgba(135, 206, 235, 0.5),
+                 0 0 20px rgba(135, 206, 235, 0.3),
+                 0 0 30px rgba(135, 206, 235, 0.2);
+  } 
+
+
+.navigate-btn {
+    padding: 10px 20px;
+    font-family: 'Comic Neue';
+    font-size: 16px;
+    background-color: rgba(10, 71, 95, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigate-btn:hover {
+    background-color: rgba(89, 135, 153, 0.3);
+  }
