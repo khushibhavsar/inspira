@@ -26,3 +26,37 @@
     line-height: 1.4;
     margin: 20px 0;
   }
+
+  .options {
+    display: flex;
+    gap: 100px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
+    margin: 0 10px; /* Reduce side margins */
+}
+
+.profile-option {
+    width: 330px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-option:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.option-text {
+    margin-top: 5px; /* Small space between image and text */
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
