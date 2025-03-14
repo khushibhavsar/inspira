@@ -1,0 +1,181 @@
+.professional {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: #98c1d9;
+    display: flex;
+    overflow-x: hidden;
+    padding: 0px 40px;
+  }
+  
+  .menuContainer{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    padding: 30px 15px;
+  }
+  
+  .subMenu{
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .logo {
+    width: 110px;
+    min-width: 110px;
+  }
+  
+  .iconContainer{
+    width: 50px;
+    height: 50px;
+    min-width: 40px;
+    border-radius: 40%;
+    border: 2px solid #717273;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    margin: 15px 0;
+    transition: 0.3s;
+  }
+  
+  .MuiSvgIcon-root{
+    color: #313233;
+    font-size: 18px;
+  }
+  
+  .iconContainer:hover , .iconContainer.active{
+    background: #2e2f30;
+  }
+  
+  .iconContainer:hover .MuiSvgIcon-root,
+  .iconContainer.active .MuiSvgIcon-root {
+    color: #feffff;
+  }
+  
+  main{
+    flex : 1;
+    height: 100%;
+    padding-top: 35px;
+    margin-left: 130px;
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+  
+  .profile-image {
+    margin: 0 auto 16px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4A90E2;
+    object-fit: cover;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  .profile-username {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 20px;
+  }
+  
+  .profile-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .nav-link {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .post-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    background-color: #1a365d;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-info {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .view-count {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  /* Adjust main content area */
+  main {
+    flex: 1;
+    height: 100%;
+    padding-top: 35px;
+    margin-left: 130px;
+    overflow-y: auto;
+  }

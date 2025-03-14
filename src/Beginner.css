@@ -88,13 +88,14 @@
     width: 100%;
     outline: none;
     border: none;
-    color: #313233;
+    color: #0d0d0e;
     font-size: 18px;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    padding-left: 10px;
   }
   
   .search{
-    background: #000001;
+    background: #1f1f3f;
     width: 40px;
     min-width: 40px;
     height: 40px;
@@ -105,9 +106,14 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     cursor: pointer;
   }
+
+  .search-icon {
+    width: 270px;
+    height: 40px;
+}
   
   .search img{
-    width: 25px;
+    width: 40px;
   }
   
   .mainContainer {
@@ -118,7 +124,15 @@
     grid-template-columns: repeat(auto-fill, 300px);
     grid-auto-rows: 10px;
     justify-content: center;
+    overflow: none;
   }
+  
+  *{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
   
   .pin{
     border-radius: 16px;

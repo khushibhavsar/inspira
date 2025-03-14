@@ -1,12 +1,15 @@
-import { Add, Chat, FavoriteRounded, Notifications, Person, QuestionMark } from '@mui/icons-material';
+import { Add, Chat, FavoriteRounded, Notifications, Person, QuestionMark, Search } from '@mui/icons-material';
 import './Beginner.css';
 import MenuContainer from './Components/MenuContainer';
 import { useEffect } from 'react';
 import Pin from './Components/Pin';
 import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import Data from "./Components/Data";
 
+
 function Beginner() {
+  const navigate = useNavigate();
   useEffect(() => {
     const allIcon = document.querySelectorAll(".iconContainer");
 
@@ -25,6 +28,8 @@ function Beginner() {
           src={'/inspira_logo.png'} 
           alt="" 
           className="logo"
+          style={{ cursor: "pointer" }} // Change cursor on hover
+          onClick={() => navigate("/Profile")} // Navigate on click
         />
 
         <div className="subMenu">
@@ -49,11 +54,15 @@ function Beginner() {
 
       <main>
         <div className="searchBox">
-          <input type="text" placeholder="Search.." />
+        <Search className="search-icon" />
+          <input type="text" />
           <div className="search">
             <img 
-              src={'/forwardarrow.png'}  
-              alt="" />
+              src={'/profile_pic.png'}  
+              alt="" 
+              style={{ cursor: "pointer" }} // Change cursor on hover
+              onClick={() => navigate("/Professional")} // Navigate on click
+            />
           </div>
         </div>
         <div className="mainContainer">
