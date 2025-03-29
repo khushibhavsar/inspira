@@ -22,7 +22,7 @@
 
 ---
 
-## 🛠 **Technologies Used**
+## 📌 **Technologies Used**
 
 - React.js for building the user interface
 - JavaScript for interactive functionality
